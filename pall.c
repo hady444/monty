@@ -10,11 +10,12 @@ void my_pall_f(stack_t **data_str, unsigned int line_number)
 	(void)line_number;
 
 	my_traverser = *data_str;
-	if (my_traverser == NULL)
-		return;
-	while (my_traverser != NULL)
+	if (my_traverser != NULL)
 	{
-		printf("%d\n", my_traverser->n);
-		my_traverser = my_traverser->next;
+		while (my_traverser != NULL)
+		{
+			printf("%d\n", my_traverser->n);
+			my_traverser = my_traverser->next;
+		}
 	}
 }

@@ -14,7 +14,7 @@ stack_t *add_node_first(stack_t **head, const int n)
 	me = *head;
 	node = malloc(sizeof(stack_t *));
 	if (node == NULL)
-		return (NULL);
+		exit(EXIT_SUCCESS);
 	node->prev = NULL;
 	node->n = n;
 	if (me == NULL)
