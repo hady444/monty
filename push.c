@@ -10,7 +10,11 @@ void my_push_f(stack_t **data_str, unsigned int line_number)
 
 	if (cont.arguments)
 	{
-		for (j = 0; cont.arguments[j] != '\0'; j++)
+		if (cont.arguments[0] == '-')
+			j = 1;
+		else
+			j = 0;
+		for (; cont.arguments[j] != '\0'; j++)
 		{
 			if (cont.arguments[j] < 48 || cont.arguments[j] > 57)
 				change = 1;
