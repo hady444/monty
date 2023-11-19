@@ -36,10 +36,13 @@ int main(int argc, char *argv[])
 		cont.line = line;
 		line_count++;
 		if (get_read < 1)
+		{
+			free(line);
 			break;
+		}
 		apply_fun(&data_str, line_count);
 		free(line);
 	}
-	free_structure(data_str), fclose(file);
+	fclose(file), free_structure(data_str);
 	return (0);
 }
