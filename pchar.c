@@ -20,7 +20,7 @@ void my_pchar_f(stack_t **data_str, unsigned int line_count)
 	}
 	else
 	{
-		fprintf(stderr, "L%d: can't pchar, stack too short\n", line_count);
+		fprintf(stderr, "L%d: can't pchar, stack empty\n", line_count);
 		free_structure(*data_str), free(cont.line), free(cont.my_file);
 		exit(EXIT_FAILURE);
 	}
