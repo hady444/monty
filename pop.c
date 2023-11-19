@@ -11,11 +11,15 @@ void my_pop_f(stack_t **data_str, unsigned int line_count)
 
 	if (data_str && *data_str)
 	{
-		node = *data_str;
-		*data_str = node->next;
-		(*data_str)->prev = NULL;
-		node->next = NULL;
-		printf("%d\n", node->n);
+		node = (*data_str);
+		if ((*data_str)->next)
+		{
+			*data_str = (*data_str)->next;
+			(*data_str)->prev = NULL;
+		}
+		else
+			*data_str = NULL;
+		free(node);
 	}
 	else
 	{
