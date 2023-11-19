@@ -61,4 +61,5 @@ void free_structure(stack_t *data_str);
 int apply_fun(stack_t **data_str, unsigned int line_number);
 void my_pall_f(stack_t **data_str, unsigned int line_number);
 void my_pint_f(stack_t **data_str, unsigned int line_number);
+void my_pop_f(stack_t **data_str, unsigned int line_count);
 #endif
