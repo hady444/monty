@@ -18,7 +18,7 @@ void my_pstr_f(stack_t **data_str, unsigned int line_count)
 		{
 			break;
 		}
-		printf("%c\n", travers->n);
+		printf("%c", travers->n);
 		travers = travers->next;
 	}
 	printf("\n");
