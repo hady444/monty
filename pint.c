@@ -13,6 +13,7 @@ void my_pint_f(stack_t **data_str, unsigned int line_number)
 	else
 	{
 		printf("L%d: can't pint, stack empty\n", line_number);
+		free_structure(*data_str), free(cont.line), free(cont.my_file);
 		exit(EXIT_FAILURE);
 	}
 }
