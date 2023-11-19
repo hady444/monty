@@ -19,7 +19,7 @@ void my_sub_f(stack_t **data_str, unsigned int line_count)
 	}
 	else
 	{
-		fprintf(stderr, "L%d: can't add, stack too short\n", line_count);
+		fprintf(stderr, "L%d: can't sub, stack too short\n", line_count);
 		free_structure(*data_str), free(cont.line), free(cont.my_file);
 		exit(EXIT_FAILURE);
 	}
