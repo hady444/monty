@@ -5,7 +5,7 @@
  */
 void my_rotr_f(stack_t **data_str, unsigned int line_count)
 {
-	stack_t *node, *traverser;
+	stack_t *traverser;
 	(void) line_count;
 
         if (data_str && *data_str && (*data_str)->next)
@@ -15,8 +15,7 @@ void my_rotr_f(stack_t **data_str, unsigned int line_count)
 			traverser = traverser->next;
 		traverser->prev->next = NULL;
 		traverser->prev = NULL;
-		node = *data_str;
-		traverser->next = node;
+		traverser->next = *data_str;
 		*data_str = traverser;
 	}
 }
