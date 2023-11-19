@@ -10,6 +10,7 @@ int apply_fun(stack_t **data_str, unsigned int line_number)
 	instruction_t op_cont[] = {
 		{"push", my_push_f},
 		{"pall", my_pall_f},
+		{"pint", my_pint_f},
 		{NULL, NULL}
 	};
 	unsigned int i = 0;

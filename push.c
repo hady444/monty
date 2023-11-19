@@ -8,7 +8,7 @@ void my_push_f(stack_t **data_str, unsigned int line_number)
 {
 	int j, change = 0;
 
-	if (!cont.arguments)
+	if (cont.arguments)
 	{
 		for (j = 0; cont.arguments[j] != '\0'; j++)
 		{
