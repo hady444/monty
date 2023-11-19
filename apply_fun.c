@@ -3,7 +3,7 @@
  * apply_fun - take each function
  * @data_str: structure container
  * @line_number: number read from file
- * Return: 0 if success, 1 if error
+ * Return: 1 if success, 0 if error
  */
 int apply_fun(stack_t **data_str, unsigned int line_number)
 {
@@ -12,6 +12,7 @@ int apply_fun(stack_t **data_str, unsigned int line_number)
 		{"pall", my_pall_f},
 		{"pint", my_pint_f},
 		{"pop", my_pop_f},
+		{"swap", my_swap_f},
 		{NULL, NULL}
 	};
 	unsigned int i = 0;

@@ -3,7 +3,7 @@
  * my_pop_f - removes the top element of the stack
  * @data_str: poitoer to head of stack
  * @line_count: count of current read line
- * Return: top node.
+ *
  */
 void my_pop_f(stack_t **data_str, unsigned int line_count)
 {

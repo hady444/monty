@@ -31,7 +31,6 @@ int main(int argc, char *argv[])
 	while (get_read >= 1)
 	{
 		line = NULL;
-		get_size = 0;
 		get_read = getline(&line, &get_size, file);
 		cont.line = line;
 		line_count++;
