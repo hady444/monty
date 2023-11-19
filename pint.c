@@ -6,10 +6,13 @@
 */
 void my_pint_f(stack_t **data_str, unsigned int line_number)
 {
-	(void) line_number;
-
 	if (data_str || (*data_str))
 	{
 		printf("%d\n", (*data_str)->n);
+	}
+	else
+	{
+		printf("L%d: can't pint, stack empty\n", line_number);
+		exit(EXIT_FAILURE);
 	}
 }
