@@ -16,6 +16,7 @@ void my_rotr_f(stack_t **data_str, unsigned int line_count)
 		traverser->prev->next = NULL;
 		traverser->prev = NULL;
 		traverser->next = *data_str;
+		(*data_str)->prev = traverser;
 		*data_str = traverser;
 	}
 }
