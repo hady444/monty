@@ -13,6 +13,7 @@ int apply_fun(stack_t **data_str, unsigned int line_number)
 		{"pint", my_pint_f},
 		{"pop", my_pop_f},
 		{"swap", my_swap_f},
+		{"add", my_add_f},
 		{NULL, NULL}
 	};
 	unsigned int i = 0;
