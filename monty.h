@@ -68,4 +68,5 @@ void my_nop_f(stack_t **data_str, unsigned int line_count);
 void my_sub_f(stack_t **data_str, unsigned int line_count);
 void my_div_f(stack_t **data_str, unsigned int line_count);
 void my_mul_f(stack_t **data_str, unsigned int line_count);
+void my_mod_f(stack_t **data_str, unsigned int line_count);
 #endif

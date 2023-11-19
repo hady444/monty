@@ -18,6 +18,7 @@ int apply_fun(stack_t **data_str, unsigned int line_number)
 		{"sub", my_sub_f},
 		{"div", my_div_f},
 		{"mul", my_mul_f},
+		{"mod", my_mod_f},
 		{NULL, NULL}
 	};
 	unsigned int i = 0;
