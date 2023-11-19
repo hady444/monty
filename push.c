@@ -34,6 +34,6 @@ void my_push_f(stack_t **data_str, unsigned int line_number)
 	}
 	if (cont.check == 0)
 		add_node_first(data_str, atoi(cont.arguments));
-/*	else*/
-/*		en_queue(data_str,  atoi(cont.arguments));*/
+	else
+		enqueue(data_str,  atoi(cont.arguments));
 }

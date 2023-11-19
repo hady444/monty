@@ -23,6 +23,8 @@ int apply_fun(stack_t **data_str, unsigned int line_number)
 		{"pstr", my_pstr_f},
 		{"rotl", my_rotl_f},
 		{"rotr", my_rotr_f},
+		{"stack", my_stack_f},
+		{"queue", my_queue_f},
 		{NULL, NULL}
 	};
 	unsigned int i = 0;

@@ -73,4 +73,7 @@ void my_pchar_f(stack_t **data_str, unsigned int line_count);
 void my_pstr_f(stack_t **data_str, unsigned int line_count);
 void my_rotl_f(stack_t **data_str, unsigned int line_count);
 void my_rotr_f(stack_t **data_str, unsigned int line_count);
+void my_stack_f(stack_t **data_str, unsigned int line_count);
+void my_queue_f(stack_t **data_str, unsigned int line_count);
+stack_t *enqueue(stack_t **data_str, const int n);
 #endif

@@ -1,31 +1,31 @@
-#include "lists.h"
+#include "monty.h"
 /**
  * add_dnodeint_end - add node to end of list
- * @head: pointer to head of list
+ * @data_str: pointer to head of list
  * @n: int value in node
  * Return: list
  */
-dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
+stack_t *enqueue(stack_t **data_str, const int n)
 {
-	dlistint_t *node, *travers;
+	stack_t *node, *travers;
 
-	if (head == NULL)
+	if (data_str == NULL)
 		return (NULL);
-	node = malloc(sizeof(dlistint_t *));
+	node = malloc(sizeof(stack_t *));
 	if (node == NULL)
 		return (NULL);
 	node->next = NULL;
 	node->n = n;
-	if ((*head) == NULL)
+	if ((*data_str) == NULL)
 	{
 		node->prev = NULL;
-		*head = node;
-		return (*head);
+		*data_str = node;
+		return (*data_str);
 	}
-	travers = *head;
+	travers = *data_str;
 	while (travers->next)
 		travers = travers->next;
 	node->prev = travers;
 	travers->next = node;
-	return (*head);
+	return (*data_str);
 }
