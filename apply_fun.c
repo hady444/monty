@@ -22,6 +22,7 @@ int apply_fun(stack_t **data_str, unsigned int line_number)
 		{"pchar", my_pchar_f},
 		{"pstr", my_pstr_f},
 		{"rotl", my_rotl_f},
+		{"rotr", my_rotr_f},
 		{NULL, NULL}
 	};
 	unsigned int i = 0;
