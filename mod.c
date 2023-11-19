@@ -11,6 +11,12 @@ void my_mod_f(stack_t **data_str, unsigned int line_count)
 
 	if (data_str && *data_str && (*data_str)->next)
 	{
+		if ((*data_str)->n == 0)
+		{
+			fprintf(stderr, "L%d: division by zero\n", line_count);
+			free_structure(*data_str), free(cont.line), free(cont.my_file);
+			exit(EXIT_FAILURE);
+		}
 		node = *data_str;
 		*data_str = (*data_str)->next;
 		(*data_str)->n %= node->n;
