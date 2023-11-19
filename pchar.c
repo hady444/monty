@@ -9,7 +9,7 @@ void my_pchar_f(stack_t **data_str, unsigned int line_count)
 {
 	if (data_str && *data_str)
 	{
-		if (!((*data_str)->n >= 65 && (*data_str)->n <= 90) ||
+		if (!((*data_str)->n >= 65 && (*data_str)->n <= 90) &&
 				!((*data_str)->n >= 97 && (*data_str)->n <= 122))
 		{
 			fprintf(stderr, "L%d: can't pchar, value out of range\n", line_count);
