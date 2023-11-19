@@ -64,4 +64,5 @@ void my_pint_f(stack_t **data_str, unsigned int line_number);
 void my_pop_f(stack_t **data_str, unsigned int line_count);
 void my_swap_f(stack_t **data_str, unsigned int line_count);
 void my_add_f(stack_t **data_str, unsigned int line_count);
+void my_nop_f(stack_t **data_str, unsigned int line_count);
 #endif
