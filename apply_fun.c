@@ -20,6 +20,7 @@ int apply_fun(stack_t **data_str, unsigned int line_number)
 		{"mul", my_mul_f},
 		{"mod", my_mod_f},
 		{"pchar", my_pchar_f},
+		{"pstr", my_pstr_f},
 		{NULL, NULL}
 	};
 	unsigned int i = 0;
