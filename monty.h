@@ -71,4 +71,5 @@ void my_mul_f(stack_t **data_str, unsigned int line_count);
 void my_mod_f(stack_t **data_str, unsigned int line_count);
 void my_pchar_f(stack_t **data_str, unsigned int line_count);
 void my_pstr_f(stack_t **data_str, unsigned int line_count);
+void my_rotl_f(stack_t **data_str, unsigned int line_count);
 #endif
