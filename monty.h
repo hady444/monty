@@ -66,4 +66,5 @@ void my_swap_f(stack_t **data_str, unsigned int line_count);
 void my_add_f(stack_t **data_str, unsigned int line_count);
 void my_nop_f(stack_t **data_str, unsigned int line_count);
 void my_sub_f(stack_t **data_str, unsigned int line_count);
+void my_div_f(stack_t **data_str, unsigned int line_count);
 #endif

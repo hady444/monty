@@ -19,7 +19,7 @@ void my_div_f(stack_t **data_str, unsigned int line_count)
 		}
 		node = *data_str;
 		*data_str = (*data_str)->next;
-		(*data_str)->n = node->n / (*data_str)->n;
+		(*data_str)->n /= node->n;
 		(*data_str)->prev = NULL;
 		free(node);
 	}
